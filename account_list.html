@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNGL</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    
+        <div class="container">
+            <h4 style="text-align: center;"> CUSTOMER LIST  </h4> <a href="index.html" class="btn btn-success">BACK</a><hr> 
+            <div class="row border " style="text-align: center;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CUSTOMER NO.</th>
+                            <th>METER SERIAL NO.</th>
+                            <th>CUSTOMER NAME</th>
+                            <th>EDIT</th>
+                            <th>DELETE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input type="text"></th>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><a href="/edit/{{x.id}}" class="btn btn-success">EDIT</a></td>
+                            <td><a href="/delete/{{x.id}}" class="btn btn-success">DELETE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="/account_master"><button class="btn btn-success">ADD ACCOUNT</button></a>
+        </div>
+          
+        
+        
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/popper.js"></script>
+</body>
+
